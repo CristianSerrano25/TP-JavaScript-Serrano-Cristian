@@ -5,7 +5,9 @@ console.log("Los numeros ingresados son: " + numero1 + " " + numero2 + " " + num
 
 let primerNum, segundoNum, tercerNum;
 
-if (numero1 < numero2 && numero1 < numero3) {
+if(numero1==numero2||numero2==numero3||numero1==numero3){
+    console.log("Los numeros ingresados deben ser distintos")
+} else if (numero1 < numero2 && numero1 < numero3) {
     primerNum = numero1;
     if (numero2 < numero3) {
         segundoNum = numero2;
