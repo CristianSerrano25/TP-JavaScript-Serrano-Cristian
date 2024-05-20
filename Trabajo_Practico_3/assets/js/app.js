@@ -60,14 +60,14 @@ function eliminarTarea(tareas, nombreTarea) {
 let tareas = [];
 let opcion;
 
-// Bucle para el menú
+// Bucle para el menu
 while (true) {
     opcion = parseInt(prompt(`¡Bienvenido! Elija la tarea a realizar:
-      1 - Agregar Tarea
-      2 - Listar Tareas
-      3 - Editar Tarea
-      4 - Eliminar Tarea
-      5 - Salir`));
+        1 - Agregar Tarea
+        2 - Listar Tareas
+        3 - Editar Tarea
+        4 - Eliminar Tarea
+        5 - Salir`));
 
     if (isNaN(opcion) || opcion < 1 || opcion > 5) {
         alert("Ingrese un valor del 1 al 5");
@@ -82,9 +82,11 @@ while (true) {
             listarTareas(tareas);
             break;
         case 3:
+            alert(tareas);
             editarTarea(tareas, prompt("Ingrese el nombre de la tarea a editar"));
             break;
         case 4:
+            alert(tareas);
             eliminarTarea(tareas, prompt("Ingrese el nombre de la tarea a eliminar"));
             break;
         case 5:
